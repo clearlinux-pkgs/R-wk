@@ -4,7 +4,7 @@
 #
 Name     : R-wk
 Version  : 0.7.1
-Release  : 10
+Release  : 11
 URL      : https://cran.r-project.org/src/contrib/wk_0.7.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/wk_0.7.1.tar.gz
 Summary  : Lightweight Well-Known Geometry Parsing
