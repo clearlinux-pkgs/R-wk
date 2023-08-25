@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-wk
-Version  : 0.7.3
-Release  : 15
-URL      : https://cran.r-project.org/src/contrib/wk_0.7.3.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/wk_0.7.3.tar.gz
+Version  : 0.8.0
+Release  : 16
+URL      : https://cran.r-project.org/src/contrib/wk_0.8.0.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/wk_0.8.0.tar.gz
 Summary  : Lightweight Well-Known Geometry Parsing
 Group    : Development/Tools
 License  : MIT
@@ -19,12 +19,12 @@ BuildRequires : buildreq-R
 
 %description
 well-known binary and well-known text representation of
-  geometries to and from R-native formats. 
+  geometries to and from R-native formats.
   Well-known binary is compact
   and fast to parse; well-known text is human-readable
   and is useful for writing tests. These formats are
-  useful in R only if the information they contain can be 
-  accessed in R, for which high-performance functions 
+  useful in R only if the information they contain can be
+  accessed in R, for which high-performance functions
   are provided here.
 
 %package lib
@@ -46,10 +46,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683563564
+export SOURCE_DATE_EPOCH=1692981673
 
 %install
-export SOURCE_DATE_EPOCH=1683563564
+export SOURCE_DATE_EPOCH=1692981673
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -151,6 +151,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/wk/tests/testthat/test-handler.R
 /usr/lib64/R/library/wk/tests/testthat/test-make.R
 /usr/lib64/R/library/wk/tests/testthat/test-meta.R
+/usr/lib64/R/library/wk/tests/testthat/test-orient.R
 /usr/lib64/R/library/wk/tests/testthat/test-pkg-readr.R
 /usr/lib64/R/library/wk/tests/testthat/test-pkg-sf.R
 /usr/lib64/R/library/wk/tests/testthat/test-pkg-vctrs.R
@@ -159,6 +160,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/wk/tests/testthat/test-rct.R
 /usr/lib64/R/library/wk/tests/testthat/test-set.R
 /usr/lib64/R/library/wk/tests/testthat/test-sfc-writer.R
+/usr/lib64/R/library/wk/tests/testthat/test-trans_explicit.R
 /usr/lib64/R/library/wk/tests/testthat/test-transform.R
 /usr/lib64/R/library/wk/tests/testthat/test-translate.R
 /usr/lib64/R/library/wk/tests/testthat/test-utils.R
