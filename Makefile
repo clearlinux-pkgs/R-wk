@@ -1,5 +1,5 @@
 PKG_NAME := R-wk
-URL = https://cran.r-project.org/src/contrib/wk_0.9.3.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/wk_0.9.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
